@@ -1,12 +1,354 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
 }
 body{
     background: #050f1a;
 }
-.clr{
-    width: 250px;
-    height: 250px;
-    background: #ffea00;
+.header{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.header ul li:nth-child(1){
+    padding: 10px 35px;
+}
+.header ul li:nth-child(2){
+    padding: 10px 35px;
+}
+.header ul li:nth-child(3){
+    padding: 10px 35px;
+}
+.header ul li:nth-child(4){
+    padding: 10px 35px;
+}
+.header ul li:nth-child(5){
+    padding: 10px 35px;
+}
+.header ul{
+    color: aliceblue;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    font-family: 'Poppins';
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    border: 2px solid yellow;
+    border-radius:50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.header ul li{
+    transition: color 0.6s;
+}
+.header ul li:hover{
+    color: black;
+}
+.header span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 100%;
+    background: linear-gradient(30deg,skyblue,yellowgreen,rgb(255, 0, 43));
+    border-radius: 50px;
+    z-index: -1;
+    transition: 0.5s ;
+}
+.header ul li:nth-child(2):hover~span{
+    left: 120px;
+    width: 130px;
+}
+.header ul li:nth-child(3):hover~span{
+    left: 250px;
+    width: 135px;
+}
+.header ul li:nth-child(4):hover~span{
+    left: 380px;
+    width: 153px;
+}
+.header ul li:nth-child(5):hover~span{
+    left: 534px;
+    width: 195px;
+}
+.main{
+    width: 100%;
+    height: 80vh;
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.mainbg{
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    filter: blur(30px);
+    overflow: hidden;
+}
+.box8{
+    display: none;
+}
+.box1{
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    background: rgb(255, 0, 43);
+    top: -28px;
+    left: -28px;
+    border-radius:0% 45% 20% 0% ;
+    transform: rotateZ(45deg);
+}
+.box2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgb(221, 0, 255);
+    top: -10px;
+    right:-25px;
+    border-radius: 60% 0% 55% 25%;
+    transform: rotateZ(-20deg);
+}
+.box3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgb(246, 255, 0);
+    bottom: -15px;
+    left: -25px;
+    border-radius:60% 25% 0% 80%;
+    transform: rotateZ(70deg);
+}
+.box4{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 229, 255);
+    bottom: -15px;
+    right: -10px;
+    border-radius:20% 50% 10% 50%;
+    transform: rotateZ(-10deg);
+}
+.box5{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background: rgb(255, 157, 0);
+    top: 42%;
+    left: 30%;
+    border-radius:50%;
+}
+.box6{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgb(255, 255, 255);
+    top: 33%;
+    left: 40%;
+    border-radius:50%;
+}
+.box7{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 255, 8);
+    top: 29%;
+    left: 49%;
+    border-radius:50%;
+}
+.course{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+.course h1{
+    margin-bottom: 30px;
+    font-family: 'poppins';
+}
+.edu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.btech,.inter,.ssc{
+    text-align: center;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.466);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    line-height: 30px;
+    font-family: 'poppins';
+}
+.btech{
+    border: 2px solid orange;
+    height: 260px;
+    overflow:auto;
+}
+.inter{
+    border: 2px solid white;
+    height: 260px;
+    overflow: auto;
+}
+.ssc{
+    border: 2px solid greenyellow;
+    height: 260px;
+    overflow: auto;
+}
+.btech h2,.inter h2,.ssc h2{
+    margin-bottom: 20px;
+    
+}
+.personal{
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.personal h1{
+    margin-bottom: 20px;
+}
+.pd{
+    overflow: auto;
+    padding: 40px;
+    background-color:rgba(0, 0, 0, 0.466) ;
+    border-radius: 20px;
+    border: 2px solid white;
+    line-height: 35px;
+}
+.learnings h1{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.marq{
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.466);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.png{
+    max-width: 100px;
+    margin-right: 50px;
+}
+.sidemenu ul{
+    display: none;
+}
+.bar{
+    display: none;
+}
+
+@media only screen and (max-width:740px) {
+   .mainbg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+        width: 80%;
+        filter: blur(20px);
+
+    } 
+    .main{
+        margin-top: 0;
+    }
+    .sidemenu ul{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #000000b3;
+        left: 0;
+        top:0;
+        height: 100%;
+        z-index: 1;
+        width: 270px;
+        backdrop-filter: blur(7px);
+        padding: 60px 0px;
+    }
+    .sidemenu ul li{
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        list-style-type: none;
+        width: 100%;
+        height: 50px;
+    }
+    .sidemenu ul i{
+        font-size: 30px;
+        position: absolute;
+        top: 38px;
+        right: 38px;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        right:30px;
+        top: 30px;
+    }
+   .header{
+        display: none;
+    }
+    .box1,.box2,.box3,.box4,.box5,.box6,.box7{
+        display: none;
+    }
+    .box8{
+        display: block;
+        width: 250px;
+        height: 220px;
+        transform: rotateZ(-25deg);
+        background: rgb(255, 0, 43);
+    }
+    .course h1{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .btech h2,.inter h2,.ssc h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .btech,.inter,.ssc{
+        height: 280px;
+        margin: 15px;
+        text-align: justify;
+    }
+    .personal h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .pd{
+        margin: 15px;
+        font-size: 12px;
+    }
+    .learnings h1{
+        font-size: 25px;
+    }
+
 }
