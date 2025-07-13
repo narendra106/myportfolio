@@ -432,6 +432,21 @@ body {
     right: 10px;
     
 }
+.submit{
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(255, 0, 43);
+    border: none;
+    outline: none;
+}
+.submit:hover{
+    background: transparent;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
 @media only screen and (max-width:740px) {
     .mainbg {
         display: flex;
