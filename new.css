@@ -390,6 +390,48 @@ body {
     text-decoration: none;
     color: gray;
 }
+.contactdt{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.contactdt h1{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+    
+}
+.contactme{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactme span{
+    position: relative;
+}
+.contactme input,.contactme textarea{
+    width:270px;
+    padding: 10px 30px 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    position: relative;
+}
+.contactme input:focus,.contactme textarea:focus{
+    border: 2px solid rgb(255, 0, 43);
+}
+.contactme i{
+    color: rgb(255, 0, 43);
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    
+}
 @media only screen and (max-width:740px) {
     .mainbg {
         display: flex;
