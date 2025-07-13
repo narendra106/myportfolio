@@ -59,7 +59,9 @@ body {
 .header ul li {
     transition: color 0.6s;
 }
-
+.header ul li:nth-child(1){
+    color:rgb(255, 0, 43);
+}
 .header ul li:hover {
     color: black;
 }
@@ -70,7 +72,7 @@ body {
     left: 0;
     width: 115px;
     height: 100%;
-    background: linear-gradient(30deg, skyblue, yellowgreen, rgb(255, 0, 43));
+    background: linear-gradient(30deg,#ff8c00,#ffffff,#00dd00);
     border-radius: 50px;
     z-index: -1;
     transition: 0.5s;
@@ -290,14 +292,18 @@ body {
 .marq {
     margin-top: 20px;
     width: 100%;
-    height: 150px;
+    height: auto;
+    padding: 25px 0px;
     background: rgba(0, 0, 0, 0.747);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-
+.marq h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 .sidemenu {
     display: none;
 }
@@ -310,8 +316,80 @@ body {
 .bar {
     display: none;
 }
-
-
+.right{
+    color: white;
+    padding: 10px 15px;
+    background: black;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 0, 43);
+    height: auto;
+    width: 100%;
+    background: rgb(18, 18, 18);
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+.col {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.col h2{
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.col h2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background:rgb(255, 0, 43);
+}
+.col ul a:hover{
+    color: rgb(246, 143, 160);
+}
+.col ul a{
+    line-height: 35px;
+    transition: color 0.5s ease;
+}
+.footer ul{
+    list-style: none;
+    text-align: center;
+}
+.footer ul a{
+    text-decoration: none;
+    color:white;
+    
+}
+.sociallinks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 25px;
+}
+.sociallinks a{
+    color: white;
+    transition: color 0.5s ease;
+    font-size: 22px;
+}
+.sociallinks a:hover{
+    color: rgb(255, 0, 43);
+}
+.right a{
+    text-decoration: none;
+    color: gray;
+}
 @media only screen and (max-width:740px) {
     .mainbg {
         display: flex;
@@ -333,7 +411,6 @@ body {
     .main {
         margin-top: 0;
     }
-
     .sidemenu {
         z-index: 1;
         display: none;
@@ -436,6 +513,9 @@ body {
 
     .learnings h1 {
         font-size: 25px;
+    }
+    .right span{
+        display: none;
     }
 
 }
