@@ -231,7 +231,12 @@ body {
     font-family: 'poppins';
     
 }
+.edu p{
+    padding-bottom: 15px;
+}
 .outbtech{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
@@ -239,6 +244,8 @@ body {
 
 }
 .outinter{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
@@ -246,6 +253,8 @@ body {
 
 }
 .outssc{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
@@ -287,12 +296,14 @@ body {
     backdrop-filter: blur(20px);
     border: 3px solid orange;
     height: 260px;
+    overflow: auto;
 }
 .inter {
     background: #3b3b3b23;
     border: 3px solid white;
     height: 260px;
     backdrop-filter: blur(20px);
+    overflow: auto;
 }
 
 .ssc {
@@ -300,6 +311,7 @@ body {
     border: 3px solid #37ff00;
     height: 260px;
     backdrop-filter: blur(20px);
+    overflow: auto;
   
 }
 
