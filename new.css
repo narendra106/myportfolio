@@ -287,15 +287,12 @@ body {
     backdrop-filter: blur(20px);
     border: 3px solid orange;
     height: 260px;
-    overflow: hidden;
 }
 .inter {
     background: #3b3b3b23;
     border: 3px solid white;
-    color: black;
     height: 260px;
     backdrop-filter: blur(20px);
-    
 }
 
 .ssc {
@@ -616,12 +613,13 @@ body {
         font-size: 20px;
         text-align: center;
     }
-
+    .outbtech,.outinter,.outssc{
+        margin: 15px;
+    }
     .btech,
     .inter,
     .ssc {
         height: 280px;
-        margin: 15px;
         text-align: justify;
     }
 
