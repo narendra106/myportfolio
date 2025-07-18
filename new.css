@@ -283,7 +283,7 @@ body {
 }
 .blurdesign3{
     position: absolute;
-    background:linear-gradient(-25deg,rgb(212, 255, 0),rgb(170, 255, 0),rgb(0, 68, 255),rgb(255, 0, 0));
+    background:linear-gradient(-25deg,rgb(212, 255, 0),rgb(170, 255, 0),rgb(0, 149, 255),rgb(255, 0, 251));
     width: 300px;
     height: 350px;
     border-radius: 50%;
@@ -294,13 +294,13 @@ body {
 .btech {
     background: #3b3b3b23;
     backdrop-filter: blur(20px);
-    border: 3px solid orange;
+    border: 3px solid rgb(255, 0, 174);
     height: 260px;
     overflow: auto;
 }
 .inter {
     background: #3b3b3b23;
-    border: 3px solid white;
+    border: 3px solid rgb(0, 255, 153);
     height: 260px;
     backdrop-filter: blur(20px);
     overflow: auto;
@@ -308,7 +308,7 @@ body {
 
 .ssc {
     background: #3b3b3b23;
-    border: 3px solid #37ff00;
+    border: 3px solid #b7ff00;
     height: 260px;
     backdrop-filter: blur(20px);
     overflow: auto;
