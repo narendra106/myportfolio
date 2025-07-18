@@ -225,30 +225,85 @@ body {
 .ssc {
     text-align: center;
     width: 400px;
-    background: rgba(0, 0, 0, 0.466);
     padding: 30px;
-    margin-bottom: 25px;
     border-radius: 20px;
     line-height: 30px;
     font-family: 'poppins';
+    
 }
+.outbtech{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 20px;
 
+}
+.outinter{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 20px;
+
+}
+.outssc{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 20px;
+
+}
+.blurdesign1{
+    position: absolute;
+    background:linear-gradient(-15deg,rgb(0, 17, 255),rgb(255, 0, 174),rgb(255, 0, 43));
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    left: -90px;
+    bottom: -20%;
+    z-index: -1;
+}
+.blurdesign2{
+    position: absolute;
+    background:linear-gradient(35deg,rgb(0, 255, 238),rgb(0, 255, 179),rgb(0, 255, 26));
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    right:13%;
+    bottom:-20%;
+    z-index: -1;
+}
+.blurdesign3{
+    position: absolute;
+    background:linear-gradient(-25deg,rgb(212, 255, 0),rgb(170, 255, 0),rgb(0, 68, 255),rgb(255, 0, 0));
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    right:-90px;
+    bottom:-20%;
+    z-index: -1;
+}
 .btech {
-    border: 2px solid orange;
+    background: #3b3b3b23;
+    backdrop-filter: blur(20px);
+    border: 3px solid orange;
     height: 260px;
-    overflow: auto;
+    overflow: hidden;
 }
-
 .inter {
-    border: 2px solid white;
+    background: #3b3b3b23;
+    border: 3px solid white;
+    color: black;
     height: 260px;
-    overflow: auto;
+    backdrop-filter: blur(20px);
+    
 }
 
 .ssc {
-    border: 2px solid greenyellow;
+    background: #3b3b3b23;
+    border: 3px solid #37ff00;
     height: 260px;
-    overflow: auto;
+    backdrop-filter: blur(20px);
+  
 }
 
 .btech h2,
@@ -417,10 +472,15 @@ body {
     width:270px;
     padding: 10px 30px 10px 15px;
     border-radius: 10px;
-    border: none;
+    border: 2px solid rgb(255, 255, 255);
     outline: none;
     margin-bottom: 15px;
     position: relative;
+    background:transparent;
+    color: white;
+}
+.contactme input::placeholder,.contactme textarea::placeholder{
+    color: #ff0000;
 }
 .contactme input:focus,.contactme textarea:focus{
     border: 2px solid rgb(255, 0, 43);
@@ -428,9 +488,12 @@ body {
 .contactme i{
     color: rgb(255, 0, 43);
     position: absolute;
-    top: 12px;
+    top: 14px;
     right: 10px;
     
+}
+.contactme textarea{
+    overflow: hidden;
 }
 .submit{
     padding: 10px 50px;
@@ -438,14 +501,17 @@ body {
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    background: rgb(255, 0, 43);
-    border: none;
+    background: rgb(255, 0, 0);
+    border:2px solid rgb(255, 0, 0);;
     outline: none;
+    margin-top: 15px;
+    
 }
 .submit:hover{
     background: transparent;
     color: #ff0000;
     border: 2px solid #ff0000;
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
 @media only screen and (max-width:740px) {
     .mainbg {
@@ -474,7 +540,8 @@ body {
         position: fixed;
         width: 270px;
         height: 100vh;
-        background: #1a05084b;
+        background: #36181d3e;
+        backdrop-filter: blur(10px);
         color: white;
         left: -270px;
     }
@@ -496,7 +563,7 @@ body {
     }
 
     .sidemenu ul li:hover {
-        background: rgba(242, 238, 238, 0.115);
+        background: rgba(255, 255, 255, 0.115);
     }
 
     .sidemenu i {
