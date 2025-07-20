@@ -522,7 +522,7 @@ body {
     border: 2px solid #ff0000;
     box-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
-@media only screen and (max-width:740px) {
+@media only screen and (max-width:750px) {
     .mainbg {
         display: flex;
         justify-content: center;
