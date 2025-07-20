@@ -283,7 +283,7 @@ body {
 }
 .blurdesign3{
     position: absolute;
-    background:linear-gradient(-25deg,rgb(212, 255, 0),rgb(170, 255, 0),rgb(0, 149, 255),rgb(255, 0, 251));
+    background:linear-gradient(-25deg,rgb(68, 255, 0),rgb(255, 251, 0),rgb(0, 149, 255),rgb(255, 0, 251));
     width: 300px;
     height: 350px;
     border-radius: 50%;
@@ -339,14 +339,46 @@ body {
 }
 
 .pd {
-    overflow: auto;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.466);
-    border-radius: 20px;
-    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 18px;
     line-height: 35px;
+    position: relative;
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
+.pd::after,.pd::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle)
+    ,red,rgb(250, 4, 127),rgb(64, 0, 255),rgb(1, 243, 252),rgb(0, 255, 55),rgb(0, 255, 128),rgb(229, 255, 0),yellow,red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 19px;
+    padding: 2px;
+    animation: 2s spin linear infinite;
+
+}
+.pd::before{
+    filter: blur(15px);
+    opacity: 0.7;
+}
+@keyframes spin{
+    form{
+        --angle:0deg
+    }
+    to{
+        --angle:360deg
+    }
+}
 .learnings h1 {
     text-align: center;
     color: white;
