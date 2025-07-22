@@ -531,7 +531,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    border: 5px solid rgb(0, 179, 255);
     border-radius: 10px;
 }
 #resumex{
@@ -554,9 +553,7 @@ body {
 
     }
     .resumeimg{
-        min-height: 30%;
         height: 56%;
-        min-width: 50px;
         width: 280px;
         background: url("my\ resume\ image.jpeg");
         background-repeat: no-repeat;
