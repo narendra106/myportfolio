@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
+/* #00ffbb */
+/* #ff0000 */
 
 * {
     margin: 0;
@@ -40,7 +42,7 @@ body {
 }
 
 .header ul {
-    color: aliceblue;
+    color: #00ffbb;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,17 +52,19 @@ body {
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
-    border: 2px solid yellow;
+    border: 2.5px solid #00ffbb;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 0px 0px 10px #00ffbb1c,
+                0px 0px 15px #00ffbb80;
 }
 
 .header ul li {
     transition: color 0.6s;
 }
 .header ul li:nth-child(1){
-    color:rgb(255, 0, 43);
+    color:#003cff;
 }
 .header ul li:hover {
     color: black;
@@ -94,7 +98,7 @@ body {
 }
 
 .header ul li:nth-child(5):hover~span {
-    left: 534px;
+    left: 535px;
     width: 195px;
 }
 .name{
@@ -163,10 +167,13 @@ body {
 }
 
 .course h1 {
+    color: #00ffbb;
     margin-bottom: 30px;
     font-family: 'poppins';
 }
-
+.course h2{
+    color: #00ffbb;
+}
 .edu {
     display: flex;
     flex-wrap: wrap;
@@ -185,92 +192,24 @@ body {
     border-radius: 20px;
     line-height: 30px;
     font-family: 'poppins';
+    transition: 0.7s ease;
+    background: #28725d1e;
+    backdrop-filter: blur(20px);
+    border: 2px solid #00ffbb;
+    height: 260px;
+    overflow: auto;
     
+}
+.btech:hover,
+.inter:hover,
+.ssc:hover{
+    transform:translatey(-15px);
+    box-shadow: 3px 5px 5px #00ffbb1c,
+                3px 5px 15px #00ffbb80;
 }
 .edu p{
     padding-bottom: 15px;
 }
-.outbtech{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 25px;
-    border-radius: 20px;
-
-}
-.outinter{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 25px;
-    border-radius: 20px;
-
-}
-.outssc{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 25px;
-    border-radius: 20px;
-
-}
-.blurdesign1{
-    position: absolute;
-    background:linear-gradient(-15deg,rgb(0, 17, 255),rgb(255, 0, 174),rgb(255, 0, 43));
-    width: 300px;
-    height: 350px;
-    border-radius: 50%;
-    left: -90px;
-    bottom: -20%;
-    z-index: -1;
-}
-.blurdesign2{
-    position: absolute;
-    background:linear-gradient(35deg,rgb(0, 255, 238),rgb(0, 255, 179),rgb(0, 255, 26));
-    width: 300px;
-    height: 350px;
-    border-radius: 50%;
-    right:13%;
-    bottom:-20%;
-    z-index: -1;
-}
-.blurdesign3{
-    position: absolute;
-    background:linear-gradient(-25deg,rgb(68, 255, 0),rgb(255, 251, 0),rgb(0, 149, 255),rgb(255, 0, 251));
-    width: 300px;
-    height: 350px;
-    border-radius: 50%;
-    right:-90px;
-    bottom:-20%;
-    z-index: -1;
-}
-.btech {
-    background: #3b3b3b23;
-    backdrop-filter: blur(20px);
-    border: 3px solid rgb(255, 0, 174);
-    height: 260px;
-    overflow: auto;
-}
-.inter {
-    background: #3b3b3b23;
-    border: 3px solid rgb(0, 255, 153);
-    height: 260px;
-    backdrop-filter: blur(20px);
-    overflow: auto;
-}
-
-.ssc {
-    background: #3b3b3b23;
-    border: 3px solid #b7ff00;
-    height: 260px;
-    backdrop-filter: blur(20px);
-    overflow: auto;
-  
-}
-
 .btech h2,
 .inter h2,
 .ssc h2 {
@@ -291,7 +230,9 @@ body {
 }
 
 .personal h1 {
+    color: #00ffbb;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .pd {
@@ -337,8 +278,8 @@ body {
 }
 .learnings h1 {
     text-align: center;
-    color: white;
-    margin-top: 50px;
+    color: #00ffbb;
+    margin-top: 70px;
 }
 
 .marq {
@@ -376,7 +317,7 @@ body {
 .footer{
     display: flex;
     flex-wrap: wrap;
-    color: rgb(255, 0, 43);
+    color: #00ffbb;
     height: auto;
     width: 100%;
     background: rgb(18, 18, 18);
@@ -405,10 +346,10 @@ body {
     height: 2px;
     left: 0;
     bottom: -6px;
-    background:rgb(255, 0, 43);
+    background:#00ffbb;
 }
 .col ul a:hover{
-    color: rgb(246, 143, 160);
+    color: #89ffe0;
 }
 .col ul a{
     line-height: 35px;
@@ -436,7 +377,7 @@ body {
     font-size: 22px;
 }
 .sociallinks a:hover{
-    color: rgb(255, 0, 43);
+    color: #00ffbb;
 }
 .right a{
     text-decoration: none;
@@ -449,8 +390,9 @@ body {
 }
 .contactdt h1{
     text-align: center;
-    color: #ffffff;
+    color: #00ffbb;
     padding-bottom: 20px;
+    margin-top: 20px;
     
 }
 .contactme{
@@ -477,13 +419,13 @@ body {
     color: white;
 }
 .contactme input::placeholder,.contactme textarea::placeholder{
-    color: #ff0000;
+    color: #00ffbb;
 }
 .contactme input:focus,.contactme textarea:focus{
-    border: 2px solid rgb(255, 0, 43);
+    border: 2px solid #00ffbb;
 }
 .contactme i{
-    color: rgb(255, 0, 43);
+    color: #00ffbb;
     position: absolute;
     top: 14px;
     right: 10px;
@@ -498,17 +440,18 @@ body {
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    background: rgb(255, 0, 0);
-    border:2px solid rgb(255, 0, 0);;
+    background: #00ffbb;
+    border:2px solid #00ffbb;;
     outline: none;
     margin-top: 15px;
+    transition: 0.4s ease;
     
 }
 .submit:hover{
     background: transparent;
-    color: #ff0000;
-    border: 2px solid #ff0000;
-    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+    color: #00ffbb;
+    border: 2px solid #00ffbb;
+    box-shadow: 0px 0px 20px #00ffbb;
 }
 
 @media only screen and (max-width:750px) {
@@ -525,7 +468,7 @@ body {
     .name{
         display: block;
         position: absolute;
-        color: rgb(255, 0, 43);
+        color: #00ffbb;
         top: 27px;
         left: 30px;
     }
@@ -596,7 +539,7 @@ body {
         width: 250px;
         height: 220px;
         transform: rotateZ(-25deg);
-        background: rgb(255, 0, 43);
+        background: #00ffbb;
     }
 
     .course h1 {
