@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
-/* #00ffcc */
+/* #2affc6 */
 /* #ff0000 */
 
 * {
@@ -42,7 +42,7 @@ body {
 }
 
 .header ul {
-    color: #00ffcc;
+    color: #2affc6;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,12 +52,12 @@ body {
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
-    border: 2.5px solid #00ffcc;
+    border: 2.5px solid #2affc6;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0px 0px 15px #00ffcc29,
-                0px 0px 20px #00ffcc86;
+    box-shadow: 0px 0px 15px #2affc629,
+                0px 0px 20px #2affc686;
 }
 
 .header ul li {
@@ -167,12 +167,12 @@ body {
 }
 
 .course h1 {
-    color: #00ffcc;
+    color: #2affc6;
     margin-bottom: 30px;
     font-family: 'poppins';
 }
 .course h2{
-    color: #00ffcc;
+    color: #2affc6;
 }
 .edu {
     display: flex;
@@ -196,7 +196,7 @@ body {
     transition: 0.7s ease;
     background: #28725d1e;
     backdrop-filter: blur(20px);
-    border: 2px solid #00ffcc;
+    border: 2px solid #2affc6;
     height: 260px;
     overflow: auto;
     
@@ -205,8 +205,8 @@ body {
 .inter:hover,
 .ssc:hover{
     transform:translatey(-15px);
-    box-shadow: 3px 5px 5px #00ffcc1c,
-                3px 5px 15px #00ffcc80;
+    box-shadow: 3px 5px 5px #2affc61c,
+                3px 5px 15px #2affc680;
 }
 .edu p{
     padding-bottom: 15px;
@@ -231,7 +231,7 @@ body {
 }
 
 .personal h1 {
-    color: #00ffcc;
+    color: #2affc6;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -279,7 +279,7 @@ body {
 }
 .learnings h1 {
     text-align: center;
-    color: #00ffcc;
+    color: #2affc6;
     margin-top: 70px;
 }
 
@@ -318,7 +318,7 @@ body {
 .footer{
     display: flex;
     flex-wrap: wrap;
-    color: #00ffcc;
+    color: #2affc6;
     height: auto;
     width: 100%;
     background: rgb(18, 18, 18);
@@ -347,7 +347,7 @@ body {
     height: 2px;
     left: 0;
     bottom: -6px;
-    background:#00ffcc;
+    background:#2affc6;
 }
 .col ul a:hover{
     color: #89ffe0;
@@ -378,7 +378,7 @@ body {
     font-size: 22px;
 }
 .sociallinks a:hover{
-    color: #00ffcc;
+    color: #2affc6;
 }
 .right a{
     text-decoration: none;
@@ -391,7 +391,7 @@ body {
 }
 .contactdt h1{
     text-align: center;
-    color: #00ffcc;
+    color: #2affc6;
     padding-bottom: 20px;
     margin-top: 20px;
     
@@ -420,13 +420,13 @@ body {
     color: white;
 }
 .contactme input::placeholder,.contactme textarea::placeholder{
-    color: #00ffcc;
+    color: #2affc6;
 }
 .contactme input:focus,.contactme textarea:focus{
-    border: 2px solid #00ffcc;
+    border: 2px solid #2affc6;
 }
 .contactme i{
-    color: #00ffcc;
+    color: #2affc6;
     position: absolute;
     top: 14px;
     right: 10px;
@@ -441,8 +441,8 @@ body {
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    background: #00ffcc;
-    border:2px solid #00ffcc;;
+    background: #2affc6;
+    border:2px solid #2affc6;;
     outline: none;
     margin-top: 15px;
     transition: 0.4s ease;
@@ -450,9 +450,9 @@ body {
 }
 .submit:hover{
     background: transparent;
-    color: #00ffcc;
-    border: 2px solid #00ffcc;
-    box-shadow: 0px 0px 25px #00ffcc;
+    color: #2affc6;
+    border: 2px solid #2affc6;
+    box-shadow: 0px 0px 25px #2affc6;
 }
 
 @media only screen and (max-width:750px) {
@@ -469,7 +469,7 @@ body {
     .name{
         display: block;
         position: absolute;
-        color: #00ffcc;
+        color: #2affc6;
         top: 27px;
         left: 30px;
     }
@@ -540,7 +540,7 @@ body {
         width: 250px;
         height: 220px;
         transform: rotateZ(-25deg);
-        background: #00ffcc;
+        background: #2affc6;
     }
 
     .course h1 {
