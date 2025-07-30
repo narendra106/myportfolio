@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins';
+    
 }
 
 body {
@@ -40,7 +41,21 @@ body {
 .header ul li:nth-child(5) {
     padding: 10px 35px;
 }
-
+.header ul::after,.header ul::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle)
+    ,#050f1a,#050f1a,#050f2a,#2affc6,#2affc6);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 25px;
+    padding: 2px;
+    animation: 4s spin linear infinite;
+}
 .header ul {
     color: #2affc6;
     display: inline-flex;
@@ -52,16 +67,18 @@ body {
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
-    border: 2.5px solid #2affc6;
+    background: #050f1a;
+    /* border: 2.5px solid #2affc6; */
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0px 0px 15px #2affc629,
-                0px 0px 20px #2affc686;
+    /* box-shadow: 0px 0px 15px #2affc629,
+                0px 0px 20px #2affc686; */
 }
 
 .header ul li {
     transition: color 0.6s;
+    z-index: 1;
 }
 .header ul li:nth-child(1){
     color:#003cff;
@@ -76,9 +93,9 @@ body {
     left: 0;
     width: 115px;
     height: 100%;
-    background: linear-gradient(30deg,#ff8c00,#ffffff,#00dd00);
+    background: linear-gradient(140deg,#ff8c00,#ffffff,#00dd00);
     border-radius: 50px;
-    z-index: -1;
+    z-index: 0;
     transition: 0.5s;
 }
 
@@ -170,6 +187,9 @@ body {
     color: #2affc6;
     margin-bottom: 30px;
     font-family: 'poppins';
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 }
 .course h2{
     color: #2affc6;
@@ -181,6 +201,16 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+}
+@keyframes scrollanime{
+    from{
+        scale: 0.5;
+        opacity: 0.5;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .btech,
@@ -195,10 +225,12 @@ body {
     font-family: 'poppins';
     transition: 0.7s ease;
     background: #28725d1e;
-    backdrop-filter: blur(20px);
     border: 2px solid #2affc6;
     height: 260px;
     overflow: auto;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
     
 }
 .btech:hover,
@@ -227,6 +259,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 
 }
 
@@ -234,6 +269,10 @@ body {
     color: #2affc6;
     margin-bottom: 20px;
     margin-top: 20px;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+    
 }
 
 .pd {
@@ -281,6 +320,9 @@ body {
     text-align: center;
     color: #2affc6;
     margin-top: 70px;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 }
 
 .marq {
@@ -388,12 +430,18 @@ body {
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 }
 .contactdt h1{
     text-align: center;
     color: #2affc6;
     padding-bottom: 20px;
     margin-top: 20px;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
     
 }
 .contactme{
@@ -446,6 +494,9 @@ body {
     outline: none;
     margin-top: 15px;
     transition: 0.4s ease;
+    animation: scrollanime ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
     
 }
 .submit:hover{
