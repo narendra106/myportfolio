@@ -496,7 +496,7 @@ body {
     transition: 0.4s ease;
     animation: scrollanime ;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 20%;
     
 }
 .submit:hover{
