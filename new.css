@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #e6e6fa;
+    background: #f0def7;
 }
 
 .header {
@@ -46,7 +46,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: conic-gradient(from var(--angle)
-    ,#e6e6fa,#e6e6fa,#050f2a,#570987,#570987);
+    ,#f0def7,#f0def7,#f0def7,#7700bc,#7700bc);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -56,7 +56,7 @@ body {
     animation: 4s spin linear infinite;
 }
 .header ul {
-    color: #570987;
+    color: #7700bc;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -66,13 +66,13 @@ body {
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
-    background: #e6e6fa;
-    /* border: 2.5px solid #570987; */
+    background: #f0def7;
+    /* border: 2.5px solid #7700bc; */
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    /* box-shadow: 0px 0px 15px #57098729,
-                0px 0px 20px #57098786; */
+    /* box-shadow: 0px 0px 15px #7700bc29,
+                0px 0px 20px #7700bc86; */
 }
 
 .header ul li {
@@ -183,7 +183,7 @@ body {
 }
 
 .course h1 {
-    color: #570987;
+    color: #7700bc;
     margin-bottom: 30px;
     font-family: 'poppins';
     animation: scrollanime ;
@@ -191,7 +191,7 @@ body {
     animation-range: entry 0% cover 45%;
 }
 .course h2{
-    color: #570987;
+    color: #7700bc;
 }
 .edu {
     display: flex;
@@ -230,7 +230,7 @@ body {
     width: auto;
     height: 50px;
     overflow: hidden;
-    color: #570987;
+    color: #7700bc;
     
 }
 .inview ul li{
@@ -316,7 +316,7 @@ body {
     font-family: 'poppins';
     transition: 0.7s ease;
     background: #28725d1e;
-    border: 2px solid #570987;
+    border: 2px solid #7700bc;
     height: 260px;
     overflow: auto;
     animation: scrollanime ;
@@ -328,8 +328,8 @@ body {
 .inter:hover,
 .ssc:hover{
     transform:translatey(-15px);
-    box-shadow: 3px 5px 5px #5709871c,
-                3px 5px 15px #57098780;
+    box-shadow: 3px 5px 5px #7700bc1c,
+                3px 5px 15px #7700bc80;
 }
 .edu p{
     padding-bottom: 15px;
@@ -357,7 +357,7 @@ body {
 }
 
 .personal h1 {
-    color: #570987;
+    color: #7700bc;
     margin-bottom: 20px;
     margin-top: 20px;
     animation: scrollanime ;
@@ -409,7 +409,7 @@ body {
 }
 .learnings h1 {
     text-align: center;
-    color: #570987;
+    color: #7700bc;
     margin-top: 70px;
     animation: scrollanime ;
     animation-timeline: view();
@@ -451,7 +451,7 @@ body {
 .footer{
     display: flex;
     flex-wrap: wrap;
-    color: #570987;
+    color: #7700bc;
     height: auto;
     width: 100%;
     background: rgb(18, 18, 18);
@@ -480,10 +480,10 @@ body {
     height: 2px;
     left: 0;
     bottom: -6px;
-    background:#570987;
+    background:#7700bc;
 }
 .col ul a:hover{
-    color: #89ffe0;
+    color: #c891ff;
 }
 .col ul a{
     line-height: 35px;
@@ -511,7 +511,7 @@ body {
     font-size: 22px;
 }
 .sociallinks a:hover{
-    color: #570987;
+    color: #7700bc;
 }
 .right a{
     text-decoration: none;
@@ -527,7 +527,7 @@ body {
 }
 .contactdt h1{
     text-align: center;
-    color: #570987;
+    color: #7700bc;
     padding-bottom: 20px;
     margin-top: 20px;
     animation: scrollanime ;
@@ -559,13 +559,13 @@ body {
     color: white;
 }
 .contactme input::placeholder,.contactme textarea::placeholder{
-    color: #570987;
+    color: #7700bc;
 }
 .contactme input:focus,.contactme textarea:focus{
-    border: 2px solid #570987;
+    border: 2px solid #7700bc;
 }
 .contactme i{
-    color: #570987;
+    color: #7700bc;
     position: absolute;
     top: 14px;
     right: 10px;
@@ -575,13 +575,14 @@ body {
     overflow: hidden;
 }
 .submit{
+    color: #f0def7;
     padding: 10px 50px;
     border-radius: 10px;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    background: #570987;
-    border:2px solid #570987;;
+    background: #7700bc;
+    border:2px solid #7700bc;;
     outline: none;
     margin-top: 15px;
     transition: 0.4s ease;
@@ -592,9 +593,9 @@ body {
 }
 .submit:hover{
     background: transparent;
-    color: #570987;
-    border: 2px solid #570987;
-    box-shadow: 0px 0px 25px #570987;
+    color: #7700bc;
+    border: 2px solid #7700bc;
+    box-shadow: 0px 0px 25px #7700bc;
 }
 
 @media only screen and (max-width:750px) {
@@ -611,7 +612,7 @@ body {
     .name{
         display: block;
         position: absolute;
-        color: #570987;
+        color: #7700bc;
         top: 27px;
         left: 30px;
     }
@@ -682,7 +683,7 @@ body {
         width: 250px;
         height: 220px;
         transform: rotateZ(-25deg);
-        background: #570987;
+        background: #7700bc;
     }
 
     .course h1 {
