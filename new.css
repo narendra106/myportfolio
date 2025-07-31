@@ -3,9 +3,28 @@
 
 :root{
     --main-color:#7548fd;
+    --opacity-main:#7548fd6a;
     --bg-color:#e6e6fa;
+    --common-black:#000000;
+    --common-white:#ffffff;
+    --text-color:#000000;
+    --alt-text-color:#ffffff;
+    --card-bg:#9b7cfb1e;
+    --hover-color:#c891ff;
+    --alt:#dbcfff;
 }
-
+.nightmode{
+    --main-color:#00ffae;
+    --opacity-main:#00ffae45;
+    --bg-color:#040d20;
+    --common-black:#000000;
+    --common-white:#ffffff;
+    --text-color:#ffffff;
+    --alt-text-color:#000000;
+    --card-bg:#ffb2b213;
+    --hover-color:#8effdb;
+    --alt:#00081a;
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +32,28 @@
     font-family: 'poppins';
     
 }
-
 body {
     background:var(--bg-color);
 }
-
+.darkmode{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 7px;
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+    transition:box-shadow 0.2s ease-in;
+}
+.darkmode:hover{
+    box-shadow: 0px 0px 15px var(--main-color);
+    
+}
+#light{
+    position: absolute;
+}
 .header {
     margin-top: 50px;
     display: flex;
@@ -88,7 +124,7 @@ body {
     color:#003cff;
 }
 .header ul li:hover {
-    color: black;
+    color:var(--text-color);
 }
 
 .header span {
@@ -120,7 +156,7 @@ body {
 
 .header ul li:nth-child(5):hover~span {
     left: 535px;
-    width: 195px;
+    width: 194px;
 }
 .name{
     display: none;
@@ -184,7 +220,7 @@ body {
     margin-top: 30px;
     width: 100%;
     align-items: center;
-    color: white;
+    color: var(--alt-text-color);
 }
 
 .course h1 {
@@ -210,7 +246,7 @@ body {
     position: absolute;
     top: 40%;
     left: 15%;
-    color: white;
+    color: var(--text-color);
     
 
 }
@@ -312,7 +348,7 @@ body {
 .btech,
 .inter,
 .ssc {
-    color: black;
+    color: var(--text-color);
     text-align: center;
     width: 400px;
     padding: 30px;
@@ -321,7 +357,7 @@ body {
     line-height: 30px;
     font-family: 'poppins';
     transition: 0.7s ease;
-    background: #9b7cfb1e;
+    background:var(--card-bg);
     border: 2px solid var(--main-color);
     height: 260px;
     overflow: auto;
@@ -334,8 +370,9 @@ body {
 .inter:hover,
 .ssc:hover{
     transform:translatey(-15px);
-    box-shadow: 3px 5px 5px var(--main-color)1c,
-                3px 5px 15px var(--main-color)80;
+    box-shadow: 5px 5px 10px var(--opacity-main),
+                5px 7px 25px var(--opacity-main);
+
 }
 .edu p{
     padding-bottom: 15px;
@@ -348,7 +385,7 @@ body {
 }
 
 .personal {
-    color: white;
+    color: var(--text-color);
     margin-top: 40px;
     width: 100%;
     display: flex;
@@ -374,7 +411,7 @@ body {
 
 .pd {
     padding: 40px;
-    background-color: rgb(0, 0, 0);
+    background-color:var(--alt);
     border-radius: 18px;
     line-height: 35px;
     position: relative;
@@ -427,7 +464,7 @@ body {
     width: 100%;
     height: auto;
     padding: 25px 0px;
-    background:black;
+    background:var(--common-black);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -450,9 +487,9 @@ body {
     display: none;
 }
 .right{
-    color: white;
+    color: var(--common-white);
     padding: 10px 15px;
-    background: black;
+    background: var(--common-black);
 }
 .footer{
     display: flex;
@@ -489,7 +526,7 @@ body {
     background:var(--main-color);
 }
 .col ul a:hover{
-    color: #c891ff;
+    color: var(--hover-color);
 }
 .col ul a{
     line-height: 35px;
@@ -501,7 +538,7 @@ body {
 }
 .footer ul a{
     text-decoration: none;
-    color:white;
+    color:var(--common-white);
     
 }
 .sociallinks{
@@ -512,7 +549,7 @@ body {
     column-gap: 25px;
 }
 .sociallinks a{
-    color: white;
+    color: var(--common-white);
     transition: color 0.5s ease;
     font-size: 22px;
 }
@@ -562,7 +599,7 @@ body {
     margin-bottom: 15px;
     position: relative;
     background:transparent;
-    color:black;
+    color:var(--text-color);
 }
 .contactme input::placeholder,.contactme textarea::placeholder{
     color: var(--main-color);
@@ -633,7 +670,7 @@ body {
         height: 100vh;
         background: #36181d3e;
         backdrop-filter: blur(10px);
-        color: white;
+        color: var(--alt-text-color);
         left: -270px;
     }
 
