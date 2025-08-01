@@ -25,6 +25,23 @@
     --hover-color:#8effdb;
     
 }
+.light{
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    border-radius: 50%;
+    filter:invert(37%) sepia(91%) saturate(4481%) hue-rotate(243deg) brightness(97%) contrast(105%);
+    
+}
+.dark {
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    border-radius: 50%;
+    filter: invert(70%) sepia(88%) saturate(1935%) hue-rotate(108deg) brightness(104%) contrast(116%);
+    display: none;
+    
+}
 * {
     margin: 0;
     padding: 0;
@@ -34,13 +51,13 @@
 }
 body {
     background:var(--bg-color);
+    transition:background 0.4s ease-in-out,color 0.4s ease-in-out;
 }
 .darkmode{
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 20px;
-    padding: 7px;
     color: var(--main-color);
     border: 3px solid var(--main-color);
     border-radius: 50%;
@@ -94,7 +111,7 @@ body {
     z-index: -1;
     border-radius: 25px;
     padding: 3px;
-    animation: 4s spin linear infinite;
+    animation: 5s spin linear infinite;
 }
 .header ul {
     color: var(--main-color);
@@ -114,6 +131,7 @@ body {
     font-weight: bold;
     /* box-shadow: 0px 0px 15px var(--main-color)29,
                 0px 0px 20px var(--main-color)86; */
+    transition:background 0.4s ease-in-out;
 }
 
 .header ul li {
@@ -245,7 +263,7 @@ body {
 .mainview{
     position: absolute;
     top: 40%;
-    left: 15%;
+    padding: 0 10%;
     color: var(--text-color);
     
 
@@ -641,7 +659,7 @@ body {
     box-shadow: 0px 0px 25px var(--main-color);
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:780px) {
     .mainbg {
         display: flex;
         justify-content: center;
@@ -652,6 +670,67 @@ body {
         filter: blur(20px);
 
     }
+    .inview h1,.inview ul{
+        font-size: 25px;
+        height: 29px;
+    }
+    @keyframes namescroll{
+    0%{
+        transform: translateY(0);  
+    }
+    10%{
+        transform: translateY(0);
+    }
+    12%{  
+        transform: translateY(-37px);
+      }
+    22%{
+        transform: translateY(-37px);
+    }
+    24%{
+        transform: translateY(-74px);
+    }
+    34%{
+        transform: translateY(-74px);
+    }
+    36%{
+        transform: translateY(-113px);
+    }
+    46%{
+        transform: translateY(-113px);
+    }
+    48%{
+        transform: translateY(-150px);
+    }
+    58%{
+        transform: translateY(-150px);
+    }
+    60%{
+        transform: translateY(-113px);
+    }
+    70%{
+        transform: translateY(-113px);
+    }
+    72%{
+        transform: translateY(-74px);
+    }
+    82%{
+        transform: translateY(-74px);
+    }
+    84%{
+        transform: translateY(-37px);
+    }
+    94%{
+        transform: translateY(-37px);
+    }
+    96%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
     .name{
         display: block;
         position: absolute;
