@@ -11,7 +11,7 @@
     --alt-text-color:#ffffff;
     --card-bg:#9b7cfb1e;
     --hover-color:#c891ff;
-    --alt:#dbcfff;
+    
 }
 .nightmode{
     --main-color:#00ffae;
@@ -23,7 +23,7 @@
     --alt-text-color:#000000;
     --card-bg:#ffb2b213;
     --hover-color:#8effdb;
-    --alt:#00081a;
+    
 }
 * {
     margin: 0;
@@ -124,7 +124,7 @@ body {
     color:#003cff;
 }
 .header ul li:hover {
-    color:var(--text-color);
+    color:var(--common-black);
 }
 
 .header span {
@@ -411,7 +411,7 @@ body {
 
 .pd {
     padding: 40px;
-    background-color:var(--alt);
+    background-color:var(--bg-color);
     border-radius: 18px;
     line-height: 35px;
     position: relative;
@@ -428,7 +428,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: conic-gradient(from var(--angle)
-    ,red,rgb(250, 4, 127),rgb(64, 0, 255),rgb(1, 243, 252),rgb(0, 255, 55),rgb(0, 255, 128),rgb(229, 255, 0),yellow,red);
+    ,var(--main-color),var(--bg-color),var(--bg-color),var(--main-color),var(--bg-color),var(--bg-color),var(--main-color));
     top: 50%;
     left: 50%;
     translate: -50% -50%;
