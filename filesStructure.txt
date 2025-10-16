@@ -1,0 +1,60 @@
+📦 my-pern-app/
+│
+├── 📁 client/                             ← React Frontend
+│   ├── 📁 src/
+│   │   ├── 📁 components/                 ← Reusable UI pieces
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── TaskCard.jsx
+│   │   │   └── Loader.jsx
+│   │   │
+│   │   ├── 📁 pages/                      ← Main views/pages
+│   │   │   ├── Home.jsx
+│   │   │   ├── AddTask.jsx
+│   │   │   ├── EditTask.jsx
+│   │   │   └── NotFound.jsx
+│   │   │
+│   │   ├── 📁 services/                   ← API calls (fetch/axios)
+│   │   │   ├── taskService.js
+│   │   │
+│   │   ├── App.js                         ← Routing, layout
+│   │   ├── index.js                       ← React entry file
+│   │   └── main.css                       ← Global styles
+│   │
+│   ├── package.json
+│   ├── vite.config.js or webpack.config.js
+│
+├── 📁 server/                             ← Node.js + Express Backend
+│   ├── server.js                          ← Main entry point
+│   │
+│   ├── 📁 config/                         ← Configurations
+│   │   ├── db.js                          ← PostgreSQL connection setup
+│   │   ├── env.js                         ← Environment variables (optional)
+│   │
+│   ├── 📁 models/                         ← Data models / SQL queries
+│   │   ├── taskModel.js
+│   │   ├── userModel.js
+│   │
+│   ├── 📁 controllers/                    ← Logic for each route
+│   │   ├── taskController.js
+│   │   ├── userController.js
+│   │
+│   ├── 📁 routes/                         ← Express routers
+│   │   ├── taskRoutes.js
+│   │   ├── userRoutes.js
+│   │
+│   ├── 📁 middleware/                     ← Auth, error handling
+│   │   ├── errorHandler.js
+│   │   ├── authMiddleware.js
+│   │
+│   ├── 📁 utils/                          ← Helper functions
+│   │   └── logger.js
+│   │
+│   ├── package.json
+│
+├── 📁 database/                           ← SQL files (optional)
+│   ├── schema.sql                         ← Table structure
+│   ├── seed.sql                           ← Sample data
+│
+├── .env                                   ← Secrets (DB_URL, JWT_SECRET)
+├── .gitignore
+├── README.md
